@@ -1,0 +1,25 @@
+\documentclass[10pt]{article}
+\usepackage[margin=3cm]{geometry}	% Even spacing in whole document
+%\usepackage{moderncvbodyi}
+
+%% TITLE PREAMBLE%%
+\title{\bfseries\Huge Firstname Lastname}
+\author{name@mail.com}
+\date{}
+
+%% START OF DOCUMENT %%
+\begin{document}
+	% MINIPAGE USED FOR TITLE %
+	\begin{minipage}{0.65\textwidth}
+	\begingroup
+		\let\center\flushleft
+		\let\endcenter\endflushleft
+		\maketitle
+	\endgroup
+	\end{minipage}
+	
+	% MINIPAGE USED FOR PHOTO %
+	\begin{minipage}{0.3\textwidth}
+		\flushright{\rule{3.5cm}{4.5cm}}
+	\end{minipage}
+\end{document}
